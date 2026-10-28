@@ -1,0 +1,175 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #263238;
+}
+
+header {
+    background: #173b67;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+    color: #dce8f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.book-form,
+.book-list {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    min-width: 0;
+}
+
+h2 {
+    margin-top: 0;
+    color: #173b67;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #7ba7e0;
+    border-color: #2864a5;
+}
+
+button {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 5px;
+    background: #2463a6;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+#submitBtn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+.cancel-btn {
+    width: 100%;
+    margin-top: 10px;
+    background: #64748b;
+}
+
+#searchInput {
+    margin-bottom: 12px;
+}
+
+#bookCount {
+    font-weight: bold;
+    color: #475569;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #eaf1fa;
+    color: #173b67;
+}
+
+td {
+    overflow-wrap: anywhere;
+}
+
+.edit-btn {
+    background: #16804a;
+    margin: 2px;
+}
+
+.delete-btn {
+    background: #c93636;
+    margin: 2px;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #64748b;
+    padding: 15px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        padding: 0 12px;
+        margin: 18px auto;
+    }
+
+    .book-form,
+    .book-list {
+        padding: 15px;
+    }
+}
